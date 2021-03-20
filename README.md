@@ -1,16 +1,13 @@
-### Hi there 👋
+### Julio Pastor 👋
 
-<!--
-**pazthor/pazthor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Hey, I'm a Fullstak developer coming from Computer Science background
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🔭 I’m currently working on **Creditas**
+- 🌱 I’m currently learning climb stuff, play guitar & software architecture. 
+- 😄 Pronouns: he/him
+
+You can  explore my [repositories][repos], my [LinkedIn profile][linkedin], or just send me a [mention](https://twitter.com/pazthor) on Twitter.
+
+[repos]: https://github.com/pazthor?tab=repositories
+[linkedin]: https://www.linkedin.com/in/pazthor/
