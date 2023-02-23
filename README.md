@@ -3,7 +3,7 @@
 Hey, I'm a Fullstak developer coming from Computer Science background
 
 
-- 🔭 I’m currently loocking for a new oportunities 
+- 🔭 I’m currently looking for a new oportunities 
 - 🌱 I’m currently learning climb stuff, play guitar & software architecture. 
 - 😄 Pronouns: he/him
 
