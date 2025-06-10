@@ -1,0 +1,32 @@
+name: Commit Overview
+
+on:
+  workflow_dispatch:
+
+jobs:
+  overview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install requests
+      - name: Run commit overview
+        run: |
+          python commit_overview.py \
+            --github-token "$GITHUB_TOKEN" \
+            --github-owner "$GITHUB_OWNER" \
+            --github-repo "$GITHUB_REPO" \
+            --gitlab-token "$GITLAB_TOKEN" \
+            --gitlab-project "$GITLAB_PROJECT" \
+            --openai-key "$OPENAI_API_KEY"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_OWNER: ${{ secrets.GITHUB_OWNER }}
+          GITHUB_REPO: ${{ secrets.GITHUB_REPO }}
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+          GITLAB_PROJECT: ${{ secrets.GITLAB_PROJECT }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+

@@ -26,3 +26,13 @@ python commit_overview.py \
 ```
 
 The script fetches the latest commits from each platform and prints a short summary.
+
+If you provide an OpenAI API key via `--openai-key`, the script will also
+generate an AI summary of the commit messages.
+
+### Running in GitHub Actions
+
+This repository includes a workflow in `.github/workflows/commit_overview.yml`
+that runs the script. Configure the required secrets (`GITHUB_TOKEN`,
+`GITHUB_OWNER`, `GITHUB_REPO`, `GITLAB_TOKEN`, `GITLAB_PROJECT`, and optionally
+`OPENAI_API_KEY`) and trigger the workflow manually from the Actions tab.
