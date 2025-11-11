@@ -1,20 +1,23 @@
-### Julio Pastor 👋
+## Julio Pastor
 
-Hey, I'm a Full Stack Engineer coming from Computer Science background
+Full Stack Engineer with a Computer Science background, passionate about building scalable software solutions.
 
+### About
+I'm currently seeking new opportunities to apply my expertise in full-stack development and software architecture. Beyond coding, I enjoy rock climbing and playing guitar.
 
-- 🔭 I’m currently looking for a new oportunities. 
-- 🌱 I’m currently learning climb stuff, play guitar & software architecture. 
-- 😄 Pronouns: he/him
-
-You can  explore my [repositories][repos], my [LinkedIn profile][linkedin], or just send me a [mention](https://twitter.com/pazthor) on Twitter.
+### Connect
+- [GitHub Repositories][repos]
+- [LinkedIn Profile][linkedin]
+- [Twitter](https://twitter.com/pazthor)
 
 [repos]: https://github.com/pazthor?tab=repositories
 [linkedin]: https://www.linkedin.com/in/pazthor/
 
-## Commit overview
+## Commit Overview Tool
 
-Use `commit_overview.py` to print recent commits from your GitHub and GitLab projects.
+A Python utility for aggregating and summarizing recent commits across GitHub and GitLab projects.
+
+### Usage
 
 ```bash
 python commit_overview.py \
@@ -25,14 +28,24 @@ python commit_overview.py \
   --gitlab-project YOUR_GITLAB_PROJECT_ID
 ```
 
-The script fetches the latest commits from each platform and prints a short summary.
+The script retrieves the latest commits from both platforms and generates a consolidated summary.
 
-If you provide an OpenAI API key via `--openai-key`, the script will also
-generate an AI summary of the commit messages.
+#### AI-Powered Summaries
 
-### Running in GitHub Actions
+For enhanced commit analysis, provide an OpenAI API key using the `--openai-key` parameter. This enables automatic generation of intelligent summaries from commit messages.
 
-This repository includes a workflow in `.github/workflows/commit_overview.yml`
-that runs the script. Configure the required secrets (`GITHUB_TOKEN`,
-`GITHUB_OWNER`, `GITHUB_REPO`, `GITLAB_TOKEN`, `GITLAB_PROJECT`, and optionally
-`OPENAI_API_KEY`) and trigger the workflow manually from the Actions tab.
+### GitHub Actions Integration
+
+This repository includes an automated workflow at `.github/workflows/commit_overview.yml` for scheduled execution.
+
+#### Configuration
+
+Configure the following repository secrets:
+- `GITHUB_TOKEN` - GitHub personal access token
+- `GITHUB_OWNER` - GitHub username or organization
+- `GITHUB_REPO` - Repository name
+- `GITLAB_TOKEN` - GitLab personal access token
+- `GITLAB_PROJECT` - GitLab project ID
+- `OPENAI_API_KEY` - (Optional) OpenAI API key for AI summaries
+
+The workflow can be triggered manually from the Actions tab or configured for automatic execution.
